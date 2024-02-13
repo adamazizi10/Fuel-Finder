@@ -63,9 +63,9 @@ export default async function Page(props: { params: { id: string } }) {
           <Image
             src={imgUrl}
             width={740}
-            height={360}
+            height={20}
             alt={name}
-            className='max-h-[420px] min-w-full max-w-full rounded-lg border-2 sepia lg:max-w-[470px]'
+            className='min-w-full max-w-full min-h-[414px] rounded-lg border-2 lg:max-w-[470px]'
           />
         </div>
 
