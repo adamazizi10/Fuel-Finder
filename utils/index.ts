@@ -1,6 +1,6 @@
 export const getDomain = () => {
     return new URL(process.env.NODE_ENV === 'production'
-        ? 'http://fornow.com'
+        ? 'https://fuel-finder.vercel.app'
         : 'http://localhost:3000'
     )
 }
