@@ -15,8 +15,8 @@ async function getData() {
 }
 
 export const metadata: Metadata = {
-  title: "Corner Store Locator",
-  description: "Find the nearest convenient stores and shops",
+  title: "Fuel Finder",
+  description: "Find the nearest Gas Stations",
   metadataBase: getDomain(),
   alternates: {
     canonical: '/',

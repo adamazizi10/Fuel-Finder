@@ -44,7 +44,7 @@ export const createGasStation = async (gasStation: GasStationType, id: string) =
                     },
                 ])
                 if (createRecords.length > 0) {
-                    console.log(`Created a store with id: ${id}`)
+                    // console.log(`Created a gas station with id: ${id}`)
                     return getMinifiedRecords(createRecords)
                 }
             } else {
@@ -75,11 +75,11 @@ export const updateGasStation = async (id: string) => {
                     },
                 ])
                 if (updatedRecords.length > 0) {
-                    console.log(`Created a store with id: ${id}`)
+                    // console.log(`Created a store with id: ${id}`)
                     return getMinifiedRecords(updatedRecords)
                 }
             } else {
-                console.log('Gas Station does not exist')
+                // console.log('Gas Station does not exist')
                 return records
             }
         } else {

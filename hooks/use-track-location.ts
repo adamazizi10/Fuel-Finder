@@ -32,10 +32,10 @@ import { useState } from "react"
 
     const handleTrackLocation = () => {
         if(!navigator.geolocation) {
-            console.log('Geolocation is not supported by your browser')
+            // console.log('Geolocation is not supported by your browser')
             setLocationErrorMsg('Geolocation is not supported by your browser')
         } else {
-            console.log('Locating...')
+            // console.log('Locating...')
             setIsFindingLocation(true)
             setLocationErrorMsg('')
             navigator.geolocation.getCurrentPosition(success, error)

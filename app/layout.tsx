@@ -8,10 +8,6 @@ const ibmPlexSans = IBM_Plex_Sans({
   weight: ['500', '600', '700'], 
 });
 
-// export const metadata: Metadata = {
-//   title: "Corner Store Locator",
-//   description: "Find the nearest convenient stores and shops",
-// };
 
 export default function RootLayout({
   children,

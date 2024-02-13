@@ -11,7 +11,7 @@ export const upvoteAction = async (prevState: State | undefined) => {
 
     const { id } = prevState;
     const data = await updateGasStation(id);
-    console.log({ data });
+    // console.log({ data });
 
     if(data) {
         return {
