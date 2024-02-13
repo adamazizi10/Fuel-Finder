@@ -105,21 +105,7 @@ export default async function Page(props: { params: { id: string } }) {
               <p className="pl-2">Longitude: {longitude}</p>
             </div>
           )}<hr />
-
-          {address && (
-            <div className="mb-4 mt-4 flex hover:text-sky-500">&nbsp;
-              <Image
-                src="/static/icons/map.svg"
-                width="18"
-                height="18"
-                alt="places icon"
-                className="hover:text-sky-500" />
-              <p className="pl-2">
-                <Link href={`https://www.google.com/maps/search/?api=1&query=${address}`} rel="noopener noreferrer" target="_blank">Click here to Get Directions</Link>
-              </p>
-            </div>
-          )}<hr />
-          <Upvote voting={voting} id={id} />
+          <Upvote address={address} voting={voting} id={id} />
         </div>
       </div>
     </div>
