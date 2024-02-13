@@ -22,7 +22,7 @@ export function SubmitButton() {
                 src='/static/icons/loading-spinner.svg'
                 width='30'
                 height='30'
-                alt='Loading' /> : 'Up vote!'
+                alt='Loading' /> : 'Give Stars!'
             }
         </button>
     )
