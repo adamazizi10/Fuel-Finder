@@ -1,7 +1,7 @@
 import { AirtableRecordType, GasStationType } from "@/types";
 
 var Airtable = require('airtable');
-var base = new Airtable({ apiKey: process.env.AIRTABLE_TOKEN }).base('applNYIfsKAPNL2nI');
+var base = new Airtable({ apiKey: process.env.AIRTABLE_TOKEN }).base('appiZOn1zEYn1Gw4x');
 
 const table = base('gas-stations')
 
