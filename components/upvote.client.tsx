@@ -75,7 +75,7 @@ export default function Upvote({ voting, id, address, latitude, longitude }: { v
                         alt="places icon"
                         className="hover:text-sky-500" />
                     <p className="pl-2">&nbsp;&nbsp;
-                        <Link href={`https://www.google.com/maps/search/?api=1&query=${address}`} rel="noopener noreferrer" target="_blank">Click here to Get Directions</Link>
+                        <Link href={`https://www.google.com/maps/place/${latitude},${longitude}`} rel="noopener noreferrer" target="_blank">Click here to Get Directions</Link>
                     </p>
                 </div>
             )}
