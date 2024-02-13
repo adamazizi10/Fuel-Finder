@@ -10,14 +10,14 @@ import { useState } from "react"
     const [isFindingLocation, setIsFindingLocation] = useState(false)
     const [longLat, setLongLat] = useState('')
     const [locationErrorMsg, setLocationErrorMsg] = useState('')
-    const [longitude, setLongitude] = useState(0)
-    const [latitude, setLatitude] = useState(0)
+    const [userLatitude, setuserLatitude] = useState(0)
+    const [userLongitude, setUserLongitude] = useState(0)
 
     function success(position: PositionType) {
         const latitude = position.coords.latitude
-        setLatitude(latitude)
+        setuserLatitude(latitude)
         const longitude = position.coords.longitude
-        setLongitude(longitude)
+        setUserLongitude(longitude)
 
         setLongLat(`${longitude},${latitude}`)
         setIsFindingLocation(false)
@@ -46,8 +46,8 @@ import { useState } from "react"
         isFindingLocation,
         locationErrorMsg,
         handleTrackLocation,
-        longitude,
-        latitude,
+        userLatitude,
+        userLongitude,
     }
  }
 

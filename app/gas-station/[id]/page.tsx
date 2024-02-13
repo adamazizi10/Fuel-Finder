@@ -7,6 +7,7 @@ import { createGasStation } from '@/lib/airtable';
 import Upvote from '@/components/upvote.client';
 import { getDomain } from '@/utils';
 import { Metadata } from 'next';
+import useTrackLocation from '@/hooks/use-track-location';
 
 async function getData(id: string) {
   const gasStationsFromMapbox = await fetchGasStation(id)
@@ -71,41 +72,42 @@ export default async function Page(props: { params: { id: string } }) {
 
         <div className={`glassForGS mt-12 flex-col rounded-lg p-4 lg:mt-48`}>
           {address && (
-            <div className="mb-2 mt-1 flex">
+            <div className="mb-8 mt-6 flex">&nbsp;&nbsp;
               <Image
                 src="/static/icons/places.svg"
                 width="24"
                 height="24"
                 alt="places icon"
-              />
-              <p className="pl-2">{address}</p>
+              />&nbsp;&nbsp;
+              <p className={`pl-2 ${address.length >= 27 ? 'text-2xl' : ''}`}>{address}</p>
             </div>
-          )} <hr />
+          )} 
+          <hr />
 
           {address && (
-            <div className="mb-4 mt-4 flex">
+            <div className="mb-8 mt-8 flex">&nbsp;&nbsp;
               <Image
                 src="/static/icons/latlong.svg"
                 width="24"
                 height="24"
                 alt="places icon"
-              />
+              />&nbsp;&nbsp;
               <p className="pl-2">Latitude: {latitude}</p>
             </div>
           )}<hr />
 
           {address && (
-            <div className="mb-4 mt-4 flex">
+            <div className="mb-8 mt-8 flex">&nbsp;&nbsp;
               <Image
                 src="/static/icons/latlong.svg"
                 width="24"
                 height="24"
                 alt="places icon"
-              />
+              />&nbsp;&nbsp;
               <p className="pl-2">Longitude: {longitude}</p>
             </div>
           )}<hr />
-          <Upvote address={address} voting={voting} id={id} />
+          <Upvote latitude={latitude} longitude={longitude} address={address} voting={voting} id={id} />
         </div>
       </div>
     </div>
