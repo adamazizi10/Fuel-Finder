@@ -1,7 +1,7 @@
 ## Getting Started
 
 # Live Site Demo:
-[fuel-finder.live](https://fuel-finder.live)
+[fuelfinder.live](https://www.fuelfinder.live/)
 
 # Developers' Guide:
 First, run the development server:
