@@ -1,5 +1,5 @@
 # Fuel Finder
-Fuel Finder Live Site: [fuelfinder.live](https://www.fuelfinder.live/)
+Live Site: [fuelfinder.live](https://www.fuelfinder.live/)
 
 # Developers' Guide:
 First, run the development server:
