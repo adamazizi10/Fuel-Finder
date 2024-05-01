@@ -1,5 +1,3 @@
-## Getting Started
-
 # Live Site Demo:
 [fuelfinder.live](https://www.fuelfinder.live/)
 
